@@ -1,0 +1,128 @@
+.tarjetas{
+	max-width: 1000px;
+	margin: 10px auto;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	z-index: -10000px;
+}
+.contenedor_tarjeta{
+	margin: 20px;
+	margin-bottom: 0;
+}
+.contenedor_tarjeta a{
+	display: inline-block;
+}
+.contenedor_tarjeta:hover figure{
+	-webkit-transform: perspective(600px) rotateY(180deg);
+	-ms-transform: perspective(600px) rotateY(180deg);
+	-o-transform: perspective(600px) rotateY(180deg);
+	transform: perspective(600px) rotateY(180deg);
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+	box-shadow: 0px 2px 10px 2px rgba(0, 0, 0, 0.25);
+}
+.contenedor_tarjeta:hover figure img{
+	filter: blur(4px);
+}
+figure{
+	width: 100%;
+	height: 100%;
+	max-width: 400px;
+	max-height: 297px;
+	margin: 0;
+	position: relative;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	transform-style: preserve-3d;
+	transform: perspective(0px) rotateY(0deg);
+}
+figure .adelante,
+figure .atras{
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	-webkit-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+figure .adelante{
+	display: block;
+}
+figure .atras{
+	position: absolute;
+	top: 0;
+	padding: 20px;
+	transform: perspective(600px) rotateY(180deg);
+	backface-visibility: hidden;
+	overflow: auto;
+}
+figure figcaption h2{
+	font-size: 28px;
+}
+figure figcaption hr{
+	margin: 8px auto;
+}
+.form_encuesta{
+	text-align: center;
+}
+input[type='radio']{
+	display: none;
+}
+.radio label{
+	color: #8D2428;
+	margin: 2px;
+	padding: 5px 15px 5px 51px;
+	display: inline-block;
+	position: relative;
+	font: 1em;
+	border-radius: 3px;
+	cursor: pointer;
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: : all 0.3s ease;
+}
+.radio label:hover{
+	background: rgba(141, 36, 40, 0.4);
+}
+.radio label:before{
+	content: "";
+	width: 17px;
+	height: 17px;
+	display: inline-block;
+	background: none;
+	border: 3px solid #8D2428;
+	border-radius: 50%;
+	position: absolute;
+	left: 17px;
+	bottom: 3px; 
+}
+.formulario input[type="radio"]:checked + label{
+	padding: 5px 15px;
+	background : #8D2428;
+	border-radius: 2px;
+	color: white;
+}
+.formulario input[type="radio"]:checked + label:before{
+	display: none;
+}
+.boton{
+	background: #8D2428;
+	border-radius: 5px;
+	border: 2px solid #F2F2F2;
+	color: black;
+	cursor: pointer;
+	display: inline-block;
+	font-family: 'ArchitectsDaughter', cursive;
+	font-size: 20px;
+	padding: 9px;
+	width: 65%;
+}
+.boton:hover{
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	background: rgba(141, 36, 40, 0.9);
+}

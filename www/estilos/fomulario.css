@@ -1,0 +1,95 @@
+@font-face{
+	font-family: 'ArchitectsDaughter';
+	src : url(../fonts/ArchitectsDaughter.ttf);
+}
+.text-group input, .text-group textarea{
+	font-family: 'ArchitectsDaughter', cursive;
+	font-size: 16px;
+	color: #8D2428;
+	width: 70%;
+	outline: none;
+	padding: 15px;
+	background: none;
+	border: none;
+	border-bottom: 2px solid rgba(141, 36, 40, 0.4);
+	border-radius: 0;
+}
+.text-group {
+	position: relative;
+	margin-bottom: 32px;
+}
+.text-group input:focus, .text-group input:active,
+.text-group textarea:focus, .text-group textarea:active{
+	-webkit-transition: all 0.7s ease;
+	-o-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+	outline: none;
+	border-bottom: 2px solid #8D2428;
+}
+.text-group label {
+	color: #8D2428;
+}
+.text-group label.label {
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	margin-left: 80px;
+	font-size: 16px;
+	line-height: 16px;
+	position: absolute;
+	top: 25px;
+	left: 0;
+}
+.text-group textarea + label.label {
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	margin-left: 80px;
+	font-size: 16px;
+	line-height: 16px;
+	position: absolute;
+	top: 40px;
+	left: 0;
+}
+.text-group label.label.active {
+	top: -12px;
+	font-size: 12px;
+	line-height: 12px;
+	color: black;
+}
+input[type="submit"]{
+	margin-right: 17%;
+}
+.text-group input.error, .text-group textarea.error{
+	-webkit-transition: all 0.7s ease;
+	-o-transition: all 0.7s ease;
+	transition: all 0.7s ease;
+	border-bottom: 2px solid red;
+}
+.text-group input.error + label, .text-group textarea.error + label{
+	color: red;
+}
+.boton{
+	background: #8D2428;
+	border-radius: 5px;
+	border: 2px solid #F2F2F2;
+	color: black;
+	cursor: pointer;
+	display: inline-block;
+	font-family: 'ArchitectsDaughter', cursive;
+	font-size: 20px;
+	padding: 9px;
+	width: 65%;
+}
+.boton:hover{
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	background: rgba(141, 36, 40, 0.9);
+}
+.ocultar, div.label.active{
+	display: none;
+	width: 1px;
+	height: 1px;
+	margin: 0;
+	padding: 0;
+	position: fixed;
+}
